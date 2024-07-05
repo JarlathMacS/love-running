@@ -198,7 +198,6 @@ main {
 
 #photos {
     line-height: 0;
-
 }
 
 
@@ -219,6 +218,17 @@ main {
     padding: 5%;
     color: #3a3a3a;
 }
+
+/* Media query: large or landscape phones (576px and up) */
+@media screen and (min-width: 576px) {
+    /* Gallery page */
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+
+}
+
 
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
@@ -278,6 +288,12 @@ main {
         text-align: end;
         align-self: flex-end;
     }
+
+    /* Gallery page */
+    #photos {
+        column-count: 3;
+    }
+
 }
 
 /* Media query: laptops and larger (992px and up) */
@@ -286,34 +302,40 @@ main {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
     }
+
+    /* Gallery page */
+    #photos {
+        column-count: 4;
+    }
+
 }
 
 /* Media query: large laptops and larger (1200px and up) */
 @media screen and (min-width: 1200px) {
     
-/* Reasons section */
-#benefits {
-    display: flex;
-    flex-direction: row;
-}
+    /* Reasons section */
+    #benefits {
+        display: flex;
+        flex-direction: row;
+    }
 
-#benefits > div {
-    flex: 1;
-}
+    #benefits > div {
+        flex: 1;
+    }
 
-#benefits-physical > div {
-    align-self: flex-end;
-}
+    #benefits-physical > div {
+        align-self: flex-end;
+    }
 
-#benefits-mental > div {
-    align-self: flex-start;
-}
+    #benefits-mental > div {
+        align-self: flex-start;
+    }
 
-#benefits-image {
-    order: 0;
-}
+    #benefits-image {
+        order: 0;
+    }
 
-#benefits-mental {
-    order: 1;
-}
+    #benefits-mental {
+        order: 1;
+    }
 }
